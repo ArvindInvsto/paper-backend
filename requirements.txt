@@ -13,7 +13,7 @@ html5lib==1.1
 idna==3.4
 lxml==4.9.3
 multitasking==0.0.11
-numpy==1.24.3  # Updated version from PaperBrokerage
+numpy  # Updated version from PaperBrokerage
 pandas>=2.0.1  # Updated version from PaperBrokerage
 peewee==3.16.3
 pycodestyle==2.9.1
@@ -71,6 +71,6 @@ urllib3  # Duplicate from PaperPrice, but kept for completeness
 wrapt>=1.14.1
 yagmail==0.15.293
 
-git+https://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@github.com/invsto/atom.git
-git+https://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@github.com/invsto/quasar.git@f43a631a862588fb2d235da14b3e26fa6ff19e2f
-git+https://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@github.com/invsto/Express.git
+#git+https://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@github.com/invsto/atom.git
+#git+https://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@github.com/invsto/quasar.git@f43a631a862588fb2d235da14b3e26fa6ff19e2f
+#git+https://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@github.com/invsto/Express.git
