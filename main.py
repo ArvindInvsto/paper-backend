@@ -2,8 +2,11 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from router import BrokerageApi
 
+from priceDataframe import priceDataframe_api
+from priceDatabase import priceDatabase_api
 
-app = FastAPI(title="SHARKSIGMA-PAPER-BROKERAGE", reload = False)
+
+app = FastAPI(title="SHARKSIGMA-PAPER-BROKERAGE & DATA", reload = False)
 
 origins = ['*']
 app.add_middleware(
@@ -22,4 +25,6 @@ app.add_middleware(
 app.include_router(BrokerageApi.router)
 
 
+app.include_router(priceDatabase_api)
+app.include_router(priceDataframe_api)
 
